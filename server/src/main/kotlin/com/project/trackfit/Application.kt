@@ -1,10 +1,10 @@
 package com.project.trackfit
 
+import com.project.trackfit.repository.AuthRepository
+import com.project.trackfit.routing.configureAuthRouting
 import io.ktor.server.application.*
 import io.ktor.server.engine.*
 import io.ktor.server.netty.*
-import io.ktor.server.response.*
-import io.ktor.server.routing.*
 
 fun main() {
     embeddedServer(
@@ -16,9 +16,5 @@ fun main() {
 }
 
 fun Application.module() {
-    routing {
-        get("/") {
-            call.respondText("Ktor: ${Greeting().greet()}")
-        }
-    }
+    configureAuthRouting(repository = AuthRepository())
 }
