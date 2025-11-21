@@ -31,3 +31,13 @@ dependencyResolutionManagement {
 include(":composeApp")
 include(":server")
 include(":shared")
+
+//feature modules
+include(":features:auth:data")
+include(":features:auth:domain")
+include(":features:auth:presentation")
+
+//core modules
+include(":core:presentation:designsystem")
+include(":core:presentation:designsystem_wear")
+include(":core:presentation:ui")
