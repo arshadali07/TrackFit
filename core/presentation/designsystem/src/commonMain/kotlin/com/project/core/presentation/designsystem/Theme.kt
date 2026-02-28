@@ -37,7 +37,7 @@ val LightColorScheme = darkColorScheme(
 
 
 @Composable
-fun RuniqueTheme(
+fun TrackFitTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     content: @Composable () -> Unit
 ) {

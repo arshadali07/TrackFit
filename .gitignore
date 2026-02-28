@@ -17,3 +17,10 @@ captures
 !*.xcworkspace/contents.xcworkspacedata
 **/xcshareddata/WorkspaceSettings.xcsettings
 node_modules/
+/shelf/
+/workspace.xml
+/vcs.xml
+/gradle.xml
+/AndroidProjectSystem.xml
+/kotlinc.xml
+/misc.xml
